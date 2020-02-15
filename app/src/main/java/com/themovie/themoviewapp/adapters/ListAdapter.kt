@@ -48,6 +48,8 @@ class ListAdapter(context:Context,var movielist: ArrayList<Mymovie>?) : Recycler
                         position
                     ).movie_image
                 )
+                .placeholder(R.drawable.img_nomovieimage)
+                .error(R.drawable.img_nomovieimage)
                 .into(img_moviename);
             itemView.setOnClickListener(View.OnClickListener {
 

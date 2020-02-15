@@ -17,7 +17,7 @@
       android:gravity="center"
       android:layout_gravity="center"
       android:textColor="#ffffff"
-      android:text="Movie Details"
+
       android:background="#000000"
       android:layout_width="match_parent"
       android:layout_height="60dp">
@@ -55,7 +55,7 @@
                 android:textStyle="bold"
                 android:gravity="top"
                 android:textColor="#000000"
-                android:text="Movie Details"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -66,7 +66,7 @@
 
                 android:gravity="top"
                 android:textColor="#000000"
-                android:text="Movie Details"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -78,7 +78,7 @@
                 android:textSize="14dp"
                 android:gravity="top"
                 android:textColor="#000000"
-                android:text="Movie Details"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -91,7 +91,7 @@
                 android:textSize="14dp"
                 android:gravity="top"
                 android:textColor="#000000"
-                android:text="Movie Details"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -103,7 +103,7 @@
                 android:textSize="14dp"
                 android:gravity="top"
                 android:textColor="#000000"
-                android:text="Movie Details"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -115,7 +115,7 @@
                 android:textSize="14dp"
                 android:gravity="top"
                 android:textColor="#000000"
-                android:text="Movie Details"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -127,7 +127,7 @@
                 android:textSize="14dp"
                 android:gravity="top"
                 android:textColor="#000000"
-                android:text="Movie Details"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -151,7 +151,7 @@
             android:textStyle="bold"
             android:gravity="top"
             android:textColor="#000000"
-            android:text="Movie Details"
+
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
