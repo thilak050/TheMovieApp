@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MovieDetails">
+
+  <TextView
+      android:fontFamily="@font/opensansregular"
+
+      android:elevation="10dp"
+      android:textSize="16dp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:layout_gravity="center"
+      android:textColor="#ffffff"
+      android:text="Movie Details"
+      android:background="#000000"
+      android:layout_width="match_parent"
+      android:layout_height="60dp">
+
+  </TextView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:id="@+id/iv_movieimage"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:id="@+id/tv_moviename"
+                android:padding="5dp"
+                android:elevation="10dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:gravity="top"
+                android:textColor="#000000"
+                android:text="Movie Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:id="@+id/tv_movierating"
+                android:textSize="14dp"
+                android:padding="5dp"
+
+                android:gravity="top"
+                android:textColor="#000000"
+                android:text="Movie Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_movieduration"
+                android:padding="5dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/opensansregular"
+
+                android:textSize="14dp"
+                android:gravity="top"
+                android:textColor="#000000"
+                android:text="Movie Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="@font/opensansregular"
+
+                android:id="@+id/tv_releasedate"
+                android:padding="5dp"
+                android:elevation="10dp"
+                android:textSize="14dp"
+                android:gravity="top"
+                android:textColor="#000000"
+                android:text="Movie Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+
+                android:id="@+id/tv_language"
+                android:padding="5dp"
+                android:elevation="10dp"
+                android:textSize="14dp"
+                android:gravity="top"
+                android:textColor="#000000"
+                android:text="Movie Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+
+                android:id="@+id/tv_geners"
+                android:padding="5dp"
+                android:elevation="10dp"
+                android:textSize="14dp"
+                android:gravity="top"
+                android:textColor="#000000"
+                android:text="Movie Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+
+                android:id="@+id/tv_casts"
+                android:padding="5dp"
+                android:elevation="10dp"
+                android:textSize="14dp"
+                android:gravity="top"
+                android:textColor="#000000"
+                android:text="Movie Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1.8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_weight="0.5"
+            android:fontFamily="@font/opensansregular"
+
+            android:id="@+id/tv_aboutmovie"
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="top"
+            android:textColor="#000000"
+            android:text="Movie Details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <Button
+            android:elevation="10dp"
+            android:background="#01D277"
+            android:layout_weight="4"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="BOOK NOW"
+            android:fontFamily="@font/opensansregular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>

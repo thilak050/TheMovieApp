@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:elevation="15dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/themovie"
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/opensansregular"
+
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center|left"
+                android:layout_gravity="center|left"
+                android:textColor="#ffffff"
+                android:text="The Movie DB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_margin="15dp"
+                android:src="@drawable/img_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_margin="15dp"
+                android:src="@drawable/img_notification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:elevation="15dp"
+            android:orientation="horizontal"
+            android:background="#272727"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:fontFamily="@font/opensansregular"
+
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Movies"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="TV Shows"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="Discover"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="People"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ViewFlipper
+                android:autoStart="true"
+               android:flipInterval="3000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/banner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/banner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/banner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+            </ViewFlipper>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:fontFamily="@font/opensansregular"
+
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="center|left"
+                        android:layout_gravity="center|left"
+                        android:text="Movies"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                    </TextView>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_movielist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:background="#666565"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></View>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/img_home"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="Home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/img_book"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="Book"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/img_trending"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="Trending"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/img_profile"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+
+            </ImageView>
+
+            <TextView
+                android:fontFamily="@font/opensansregular"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="Profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

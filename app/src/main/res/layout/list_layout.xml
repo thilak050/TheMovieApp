@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:elevation="10dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/testbanner"
+                android:id="@+id/img_moviename"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_gravity="center|left"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_heart"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp">
+
+                </ImageView>
+                <TextView
+                    android:fontFamily="@font/opensansregular"
+
+                    android:id="@+id/tv_rating"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="center|left"
+                    android:text="64%"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </LinearLayout>
+            <TextView
+                android:fontFamily="@font/opensansregular"
+
+                android:padding="5dp"
+                android:id="@+id/tv_moviename"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:paddingLeft="15dp"
+                android:gravity="center|left"
+                android:text="Love Aaj Kal"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
