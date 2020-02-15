@@ -117,7 +117,7 @@ class HomePage : AppCompatActivity() {
 
 
             })
-
+        
         queue.add(stringRequest)
     }
 
