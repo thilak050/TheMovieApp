@@ -4,10 +4,13 @@ import Mymovie
 import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.ProgressDialog
+import android.content.Context
 import android.content.DialogInterface
+import android.net.ConnectivityManager
 import android.os.Bundle
 import android.util.Log
 import android.view.KeyEvent
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,6 +26,8 @@ import org.json.JSONObject
 class HomePage : AppCompatActivity() {
 
     var images: ArrayList<Mymovie> = ArrayList()
+
+    var retirnval: Boolean? = null
 
     @SuppressLint("WrongConstant")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,7 +58,15 @@ class HomePage : AppCompatActivity() {
         val url = "https://pellicular-rumbles.000webhostapp.com/themovie/themovielist.php"
 
 
+        retirnval=isOnline(applicationContext)
+        if (retirnval==true)
+        {
 
+        }else{
+            progressBar.dismiss();
+            Toast.makeText(applicationContext,"No Internet Connection",5000).show()
+
+        }
 
 
         val stringRequest = StringRequest(
@@ -117,7 +130,7 @@ class HomePage : AppCompatActivity() {
 
 
             })
-        
+
         queue.add(stringRequest)
     }
 
@@ -144,6 +157,13 @@ class HomePage : AppCompatActivity() {
             .show()
     }
 
+
+    @SuppressLint("ServiceCast", "MissingPermission")
+    fun isOnline(context: Context): Boolean {
+        val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val networkInfo = connectivityManager.activeNetworkInfo
+        return networkInfo != null && networkInfo.isConnected
+    }
 
 }
 
