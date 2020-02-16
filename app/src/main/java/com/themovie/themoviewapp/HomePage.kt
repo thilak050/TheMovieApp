@@ -20,6 +20,7 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.themovie.themoviewapp.adapters.ListAdapter
+import com.themovie.themoviewapp.utils.Constants
 import org.json.JSONObject
 
 
@@ -53,9 +54,9 @@ class HomePage : AppCompatActivity() {
 
         //call api
 
-
+        val URL = Constants.apimainaUrl
         val queue = Volley.newRequestQueue(applicationContext)
-        val url = "https://pellicular-rumbles.000webhostapp.com/themovie/themovielist.php"
+
 
 
         retirnval=isOnline(applicationContext)
@@ -70,7 +71,7 @@ class HomePage : AppCompatActivity() {
 
 
         val stringRequest = StringRequest(
-            Request.Method.GET, url,
+            Request.Method.GET, URL+"themovielist.php",
             Response.Listener { response ->
 
                 progressBar.dismiss();

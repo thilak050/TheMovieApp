@@ -13,8 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.themovie.themoviewapp.MovieDetails
 import com.themovie.themoviewapp.R
-
-
+import com.themovie.themoviewapp.utils.Constants
 
 
 class ListAdapter(context:Context,var movielist: ArrayList<Mymovie>?) : RecyclerView.Adapter<ListAdapter.RecyclerViewHolder>() {
@@ -44,7 +43,7 @@ class ListAdapter(context:Context,var movielist: ArrayList<Mymovie>?) : Recycler
             textAddress.text = movielist.get(position).movie_rating
             Picasso.get()
                 .load(
-                    "https://pellicular-rumbles.000webhostapp.com/themovie/movie_images/" + movielist.get(
+                    Constants.apimainaUrl+"movie_images/" + movielist.get(
                         position
                     ).movie_image
                 )
